@@ -4,7 +4,7 @@ This is the forest overlay that I use for my co-working Twitch stream and though
 
 # Installation
 1. Download the zip to your desired location
-![image](https://user-images.githubusercontent.com/35163331/165662709-b55ff46a-9df3-443f-b1f4-b741dd322430.png)
+![image](https://user-images.githubusercontent.com/35163331/165841032-3c9c6dd7-ce70-45d9-af5e-e2ad8e44bebe.png)
 
 2. Add a browser source
 3. Choose `forest.html`
