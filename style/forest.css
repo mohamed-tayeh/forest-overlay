@@ -1,0 +1,38 @@
+:root {
+  --text-color: 'white';
+  --font-family: 'Roboto';
+  --font-size: 120px;
+  --font-weight: 'bold';
+  --margin-top: 140px;
+}
+
+html {
+  height: 1024px;
+  width: 1024px;
+}
+
+body {
+  height: inherit;
+  width: inherit;
+}
+
+.forest-container {
+  background-image: url('./forest.png');
+  background-repeat: no-repeat;
+
+  height: inherit;
+  width: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#forest-code {
+  margin-top: var(--margin-top);
+  text-align: center;
+  font-family: var(--font-family), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  color: black;
+}
