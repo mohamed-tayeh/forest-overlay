@@ -17,7 +17,7 @@ body {
 }
 
 .forest-container {
-  background-image: url('./forest.png');
+  background-image: url('../media/forest.png');
   background-repeat: no-repeat;
 
   height: inherit;
@@ -34,5 +34,5 @@ body {
   font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight);
   font-size: var(--font-size);
-  color: black;
+  color: var(--text-color);
 }

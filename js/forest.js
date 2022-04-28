@@ -11,25 +11,21 @@
   const channelBots = configs.channelBots.map((bot) => bot.toLowerCase());
 
   const forestCodeId = 'forest-code';
+  let forestCodeEl;
 
   const opts = {
     identity: {
       username: user.username,
       password: user.oauth,
     },
-    channels: user.channel,
+    channels: [user.channel],
   };
 
   function customStyles() {
-    let backgroundColor = styles.backgroundColor.toString();
-    if (backgroundColor.startsWith('#')) {
-      backgroundColor = backgroundColor.slice(1);
-    }
+    let textColor = styles.textColor.toString();
+    if (textColor.startsWith('#')) textColor = textColor.slice(1);
 
-    document.documentElement.style.setProperty(
-      '--text-color',
-      styles.textColor
-    );
+    document.documentElement.style.setProperty('--text-color', textColor);
 
     document.documentElement.style.setProperty(
       '--font-family',
@@ -37,6 +33,11 @@
     );
 
     document.documentElement.style.setProperty('--font-size', styles.fontSize);
+
+    document.documentElement.style.setProperty(
+      '--font-weight',
+      styles.fontWeight
+    );
 
     document.documentElement.style.setProperty(
       '--margin-top',
