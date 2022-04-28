@@ -8,15 +8,15 @@ let configs = (function () {
   const channelBots = ['streamelements', 'nightbot', 'streamlabs'];
 
   // Styling - required
-  const textColor = 'white'; //  hex or name
+  const textColor = 'black'; //  hex or name
   const fontFamily = 'Roboto';
   const fontSize = '120px';
-  const fontWeight = 'bold'; // normal, bold, bolder, lighter
+  const fontWeight = '400'; // 100, 200, 300, 400, 500, 600, 700, 800, 900
   const marginTop = '140px';
 
   // Responses - required
-  // Use {forest} where you want the code to be inserted
-  const forestMsg = 'Our new forest code is: {forest} 🌲'; // works with emojis
+  // Use {forestCode} where you want the code to be inserted
+  const forestMsg = 'Our new forest code is: {forestCode} 🌲'; // works with emojis
 
   // Settings - required
   const forestCommands = ['!f']; // add more like this ['!f', '!forest']
@@ -34,6 +34,7 @@ let configs = (function () {
     textColor,
     fontFamily,
     fontSize,
+    fontWeight,
     marginTop,
   };
 
